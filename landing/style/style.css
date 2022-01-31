@@ -271,7 +271,10 @@ button {
     margin-bottom: 140px;
     text-transform: uppercase;
 }
-
+button:hover{
+    background-color: black;
+    color: white;
+}
 /* block_quote */
 .block_quote {
     display: flex;
@@ -329,7 +332,8 @@ button {
 .poster1 {
     box-shadow: 5px 5px 10px #b7bbbe;
     margin-right: 100px;
-    width: 560px;
+    width: 40%;
+    padding: 200px 20px 40px 20px;
     height: 760px;
     background-image: url(../assets/img/poster1.png);
 }
@@ -339,15 +343,43 @@ button {
     color: #ffffff;
     font-weight: bold;
     background-size: cover;
+    text-align: center;
+}
+
+.poster_link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poster_link a {
+    margin-top: 100px;
+    color: white;
+    text-decoration: none;
 }
 
 .poster2 {
     box-shadow: 5px 5px 10px #b7bbbe;
-    width: 740px;
+    padding: 100px 80px;
     height: 370px;
     margin-bottom: 50px;
     background-size: cover;
     background-image: url(../assets/img/poster2.png);
+}
+
+.poster2 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    font-size: 36px;
+    color: #000000;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.poster2 a {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .poster3 {
@@ -359,6 +391,14 @@ button {
     background-image: url(../assets/img/poster3.png);
 }
 
+.poster3 h2 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+    padding-top: 40px;
+    text-align: center;
+}
+
 .poster4 {
     box-shadow: 5px 5px 10px #b7bbbe;
     width: 330px;
@@ -367,10 +407,36 @@ button {
     background-image: url(../assets/img/poster4.png);
 }
 
+.poster4 h2 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+    padding-top: 180px;
+    text-align: center;
+}
+
 .poster1:hover,
 .poster2:hover,
 .poster3:hover,
 .poster4:hover {
     box-shadow: 5px 5px 10px #4e4f50;
     transition: .5s;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 100px;
+}
+
+footer p{
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 34px;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Montserrat";
 }
